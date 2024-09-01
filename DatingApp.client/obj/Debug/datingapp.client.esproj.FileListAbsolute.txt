@@ -1,0 +1,2 @@
+D:\AngularApp\angularapp.client\obj\Debug\datingapp.client.esproj.CoreCompileInputs.cache
+D:\DatingApp\datingApp.client\obj\Debug\datingapp.client.esproj.CoreCompileInputs.cache
