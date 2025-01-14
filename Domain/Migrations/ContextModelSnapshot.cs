@@ -60,7 +60,6 @@ namespace Domain.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
 
                     b.Property<string>("AvatarName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("City")
@@ -73,7 +72,7 @@ namespace Domain.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<DateTime>("DateOfBirth")
+                    b.Property<DateTime?>("DateOfBirth")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
@@ -87,14 +86,12 @@ namespace Domain.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Intrests")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Introduction")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsActiveEmail")
+                    b.Property<bool?>("IsActiveEmail")
                         .HasColumnType("bit");
 
                     b.Property<string>("KnowAs")
@@ -102,11 +99,10 @@ namespace Domain.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<DateTime>("LastSeen")
+                    b.Property<DateTime?>("LastSeen")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("LookingFor")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Mobile")
@@ -119,7 +115,7 @@ namespace Domain.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<DateTime>("RegisterDate")
+                    b.Property<DateTime?>("RegisterDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UserName")

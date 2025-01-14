@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
   }
 
   setCurrentUser(){
-    var user:UserDTO=JSON.parse(localStorage.getItem('user')||"")
+    var user:UserDTO=JSON.parse(localStorage.getItem('user')||"{}")
     this.accountservice.setCurrentUser(user)
   }
 
@@ -37,5 +37,5 @@ export class AppComponent implements OnInit {
       })
   }
 
-  title = 'angularapp.client';
+  title = 'Dating App';
 }

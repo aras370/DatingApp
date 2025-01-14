@@ -1,9 +1,9 @@
 export interface PhotoDTO {
 
-    id: number
+    PhotoId: number
 
     url: string
 
-    ismain: boolean
+    isMain: boolean
 
 }

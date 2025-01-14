@@ -9962,11 +9962,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DatingApp\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "D:\\DatingApp\\Presentation\\Presentation.csproj",
+      "projectPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\Presentation.csproj",
       "packagesPath": "C:\\Users\\Amazondigi.com\\.nuget\\packages\\",
-      "outputPath": "D:\\DatingApp\\Presentation\\obj\\",
+      "outputPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9987,14 +9987,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\DatingApp\\Application\\Application.csproj": {
-              "projectPath": "D:\\DatingApp\\Application\\Application.csproj"
+            "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Application\\Application.csproj"
             },
-            "D:\\DatingApp\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\DatingApp\\Domain\\Domain.csproj"
+            "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\Domain.csproj"
             },
-            "D:\\DatingApp\\InfraStructure\\InfraStructure.csproj": {
-              "projectPath": "D:\\DatingApp\\InfraStructure\\InfraStructure.csproj"
+            "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\InfraStructure\\InfraStructure.csproj": {
+              "projectPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\InfraStructure\\InfraStructure.csproj"
             }
           }
         }

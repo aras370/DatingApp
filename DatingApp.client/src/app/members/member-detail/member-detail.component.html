@@ -1,1 +1,58 @@
-<p>member-detail works!</p>
+<div class="row justify-content-end" *ngIf="member">
+  <div class="col-4">
+    <div class="card">
+      <img src="{{ member.photourl || './assets/user.jpg' }}" alt="{{ member.userName }}"
+        class="card-img-top img-thumbnail" />
+      <div class="card-body">
+        <strong>آدرس:</strong>
+        <p>{{ member.city }},{{ member.country }}</p>
+      </div>
+      <div class="card-body">
+        <strong>سن:</strong>
+        <p>{{ member.age }}</p>
+      </div>
+      <div class="card-body">
+        <strong>آخرین بازدید:</strong>
+        <p>{{ member.lastactive }}</p>
+      </div>
+      <div class="card-body">
+        <strong> تاریخ ایجاد:</strong>
+        <p>{{ member.registerDate }}</p>
+      </div>
+
+      <div class="card-footer">
+        <div class="btn-group d-flex">
+          <button class="btn btn-primary">پسندیدن</button>
+          <button class="btn btn-success">ارسال پیام</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-8">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#aboutme" type="button"
+          role="tab" aria-controls="home" aria-selected="true">درباره من</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#intrests" type="button"
+          role="tab" aria-controls="profile" aria-selected="false">علاقمندی ها</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#photos" type="button" role="tab"
+          aria-controls="contact" aria-selected="false">گالری</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="aboutme" role="tabpanel" aria-labelledby="home-tab">درباره من</div>
+      <div class="tab-pane fade" id="intrests" role="tabpanel" aria-labelledby="profile-tab">علاقمندی </div>
+      <div class="tab-pane fade" id="photos" role="tabpanel" aria-labelledby="contact-tab">
+        <ngx-gallery [options]="galleryoption" [images]="galleryImages" style="display: inline-block;
+        
+        margin-bottom: 20px; "></ngx-gallery>
+      </div>
+    </div>
+  </div>
+
+</div>

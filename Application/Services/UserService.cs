@@ -24,6 +24,23 @@ namespace Application.Services
             await context.SaveChangesAsync();
         }
 
+        public async Task EditUserInformationByUser(UpdateMemberDTO member,int userid)
+        {
+            var user = await context.Users.FindAsync(userid);
+
+            user.Intrests=member.Intrests;
+          
+            user.City=member.City;
+            user.Country=member.Country;
+            
+            user.Introduction = member.Introduction;
+            user.LookingFor = member.LookingFor;
+        
+            context.Users.Update(user);
+            context.SaveChangesAsync();
+
+        }
+
         public async Task<List<User>> GetAll()
         {
             return await context.Users.ToListAsync();
@@ -35,7 +52,8 @@ namespace Application.Services
             return users.Select(x => new MemberDTO
             {
                 UserId = x.UserId,
-                Age = x.DateOfBirth.CalculateAge(),
+                Photourl=$"https://localhost:44319/images/users/{x.AvatarName}",
+                Age = x.DateOfBirth.Value.CalculateAge(),
                 AvatarName = x.AvatarName,
                 City = x.City,
                 Country = x.Country,
@@ -43,10 +61,10 @@ namespace Application.Services
                 Gender = x.Gender,
                 Intrests = x.Intrests,
                 Introduction = x.Introduction,
-                IsActiveEmail = x.IsActiveEmail,
-                KnowAs = x.KnowAs,
+                IsActiveEmail = (bool)x.IsActiveEmail,
+                KnownAs = x.KnowAs,
                 LookingFor = x.LookingFor,
-                RegisterDate = x.RegisterDate,
+                RegisterDate = (DateTime)x.RegisterDate,
                 UserName = x.UserName,
                 Mobile = x.Mobile,
                 PhotoDTOs = x.Photos.Select(x => new PhotoDTO
@@ -69,6 +87,18 @@ namespace Application.Services
             return await context.Users.FindAsync(id);
         }
 
+        public async Task<UpdateMemberDTO> GetUserForEdit(int userId)
+        {
+            return await context.Users.Where(u => u.UserId == userId).Select(u => new UpdateMemberDTO
+            {
+                City = u.City,
+                Country = u.Country,
+                Intrests = u.Intrests,
+                Introduction = u.Introduction,
+                LookingFor = u.LookingFor,
+            }).FirstOrDefaultAsync();
+        }
+
         public async Task<MemberDTO> GetUserInformationByUserName(string userName)
         {
             var user = await context.Users.Include(u => u.Photos).
@@ -79,8 +109,10 @@ namespace Application.Services
             }
             return new MemberDTO
             {
-                Age=user.DateOfBirth.CalculateAge(),
-                UserName=user.UserName,
+                
+                Age = user.DateOfBirth.Value.CalculateAge(),
+                Photourl = $"https://localhost:44319/images/users/{user.AvatarName}",
+                UserName = user.UserName,
                 AvatarName=user.AvatarName,
                 City=user.City,
                 Country=user.Country,
@@ -88,11 +120,11 @@ namespace Application.Services
                 Gender=user.Gender,
                 Intrests=user.Intrests,
                 Introduction=user.Introduction,
-                IsActiveEmail=user.IsActiveEmail,
-                KnowAs=user.KnowAs,
+                IsActiveEmail=(bool)user.IsActiveEmail,
+                KnownAs=user.KnowAs,
                 LookingFor=user.LookingFor,
                 Mobile=user.Mobile,
-                RegisterDate=user.RegisterDate,
+                RegisterDate=(DateTime)user.RegisterDate,
                 UserId=user.UserId,
                 PhotoDTOs=user.Photos.Select(u=>new PhotoDTO
                 {

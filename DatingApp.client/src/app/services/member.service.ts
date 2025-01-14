@@ -3,31 +3,35 @@ import { Injectable } from '@angular/core';
 import { MemberDTO } from '../UserDTO/MemberDTO';
 
 
-const httpoptions={
-  headers:new HttpHeaders({
-    Authorization:'Bearer'+JSON.parse(localStorage.getItem('user')||'').token
-  })
-}
+
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class MemberService {
 
-baseurl: string = 'https://localhost:44319/api/'
+  baseurl: string = 'https://localhost:44319/api/'
 
-  constructor(private http:HttpClient) { 
+  constructor(private http: HttpClient) {
 
   }
 
-getmembers(){
+  getmembers() {
 
-  return this.http.get<MemberDTO[]>(this.baseurl+'users',httpoptions)
+    return this.http.get<MemberDTO[]>(this.baseurl + 'user')
 
-}
+  }
 
-getmember(username:string){
-return this.http.get<MemberDTO>(this.baseurl+'users/'+username,httpoptions)
-}
+  getmember(username: string) {
+    return this.http.get<MemberDTO>(this.baseurl + 'user/' + username)
+    
+  }
+
+  edituserinformation(user: MemberDTO) {
+
+    return this.http.put(this.baseurl+'User/EditUserProfoile',user);
+ 
+   }
 
 }

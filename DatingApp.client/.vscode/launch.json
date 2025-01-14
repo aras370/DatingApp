@@ -2,18 +2,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "chrome",
+      "type": "pwa-chrome",
       "request": "launch",
-      "name": "localhost (Chrome)",
-      "url": "https://localhost:4200",
-      "webRoot": "${workspaceFolder}"
-    },
-    {
-      "type": "chrome",
-      "request": "launch",
-      "name": "localhost (Chrome)",
-      "url": "https://localhost:4200",
-      "webRoot": "${workspaceFolder}"
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${webRoot}/*"
+      },
+      "skipFiles": ["chrome-error://*"]
     }
   ]
 }

@@ -4,6 +4,9 @@ import { IUserlogin } from '../models/user.interface';
 import { UserDTO } from '../UserDTO/UserDTO';
 import { map, catchError } from 'rxjs/operators';
 import { ReplaySubject } from 'rxjs';
+import { LoginDTO } from '../AccountDTO/LoginDTO';
+import { IResponseResult } from '../ResponseResult/user.login';
+
 
 
 @Injectable({
@@ -22,16 +25,18 @@ export class AccountService {
 
   }
 
-  Login(user: any) {
+  Login(user: LoginDTO) {
 
-    return this.http.post(`${this.baseurl}/Account/Login`, user).pipe(map(response => {
+    return this.http.post<IResponseResult>(`${this.baseurl}/Account/Login`, user).pipe(map(response => {
+      console.log(response)
+      if (response.issuccess) {
 
-      var user = <UserDTO>response
-
-      if (user != null) {
+        var user = <UserDTO>response.data
         localStorage.setItem('user', JSON.stringify(user))
+        this.currentUserSource.next(user)
       }
-      this.currentUserSource.next(user)
+      return response
+
     }))
 
   }
@@ -42,7 +47,10 @@ export class AccountService {
   }
 
   setCurrentUser(user: UserDTO) {
-    this.currentUserSource.next(user)
+    if (user != null && user.token != null && user.token != undefined && user.token != '') {
+      this.currentUserSource.next(user)
+
+    }
   }
 
   Register(model: any) {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DatingApp\\Domain\\Domain.csproj": {}
+    "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\DatingApp\\Domain\\Domain.csproj": {
+    "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DatingApp\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\DatingApp\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Amazondigi.com\\.nuget\\packages\\",
-        "outputPath": "D:\\DatingApp\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,84 @@
+<div class="row" *ngIf="member">
+    <div class="col-4">
+        <h2>
+            ویرایش حساب کاربری
+        </h2>
+        <div class="card">
+            <img src="{{ member.photourl || './assets/user.jpg' }}" alt="{{ member.userName }}"
+                class="card-img-top img-thumbnail" />
+            <div class="card-body">
+                <strong>آدرس:</strong>
+                <p>{{ member.city }},{{ member.country }}</p>
+            </div>
+            <div class="card-body">
+                <strong>سن:</strong>
+                <p>{{ member.age }}</p>
+            </div>
+            <div class="card-body">
+                <strong>آخرین بازدید:</strong>
+                <p>{{ member.lastactive }}</p>
+            </div>
+            <div class="card-body">
+                <strong> تاریخ ایجاد:</strong>
+                <p>{{ member.registerDate }}</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="col-8">
+
+        <div  *ngIf="editform.dirty">
+            <div class="alert alert-info">
+                <strong>هشدار</strong>شما تغییراتی داخل فرم ایجاد کرده اید
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#aboutme"
+                    type="button" role="tab" aria-controls="home" aria-selected="true">حساب کاربری </button>
+            </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="aboutme" role="tabpanel" aria-labelledby="home-tab">
+                <form #editform="ngForm" id="editform" (ngSubmit)="updatemember()">
+                    <h4>توضیحات</h4>
+                    <textarea name="introduction" [(ngModel)]="member.introduction" [value]="member.introduction" class="form-control" rows="6">
+                    </textarea>
+                    <h4 class="mt-2">علاقمند به</h4>
+                    <textarea name="lookingfor" [(ngModel)]='member.lookingFor' [value]="member.lookingFor" class="form-control" rows="6"></textarea>
+
+                    <h4 class="mt-2">علاقمندی ها</h4>
+                    <textarea [value]="member.intrests" [(ngModel)]='member.intrests' name="intrest" class="form-control" rows="6"></textarea>
+
+                    <h4 class="mt-2">مکان </h4>
+                    <div class="form-inline row">
+                        <div class="col-6">
+                            <label>شهر:</label>
+                            <input [(ngModel)]='member.city' value={{member.city}} type="text" name="city" class="form-control mt-3">
+                        </div>
+                        <div class="col-6 ">
+                            <label>کشور:</label>
+                            <input type="text" [(ngModel)]='member.country' value={{member.country}} name="country" class="form-control mt-3">
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+
+                        <button [disabled]="!editform.dirty" class="btn btn-success btn-block mt-3" type="submit" form="editform"> به روزرسانی
+                            اطلاعات</button>
+
+
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>

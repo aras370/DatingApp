@@ -1,11 +1,58 @@
 {
   "Version": 1,
-  "Hash": "uA4PscVLrzDlBxDyFkUleeR9VGM/ZvO3tVpSht4hk3M=",
+  "Hash": "/MQifZpwROsQoJC6PZaCSDGXeHQVLLkAr01XuXJ2rRc=",
   "Source": "Presentation",
   "BasePath": "_content/Presentation",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Presentation\\wwwroot",
+      "Source": "Presentation",
+      "ContentRoot": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\images\\users\\aks-darya-baraye-porofail-30.jpg",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "images/users/aks-darya-baraye-porofail-30.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\aks-darya-baraye-porofail-30.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\images\\users\\ax-neveshteh-khoshgel-porofail-14.jpg",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "images/users/ax-neveshteh-khoshgel-porofail-14.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\ax-neveshteh-khoshgel-porofail-14.jpg"
+    }
+  ]
 }

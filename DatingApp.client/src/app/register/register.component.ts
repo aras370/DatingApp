@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output, output } from '@angular/core';
 import { AccountService } from '../services/account.service';
+import RegisterDTO from '../AccountDTO/RegisterDTO';
 
 @Component({
   selector: 'app-register',
@@ -12,11 +13,14 @@ constructor(private accountservice:AccountService){
 
 }
 
-model:any={}
+model:RegisterDTO
 
   @Output() cancelregister = new EventEmitter()
 
   register() {
+
+    console.log(this.model)
+
     this.accountservice.Register(this.model).subscribe(response=>{
       console.log(response)
       this.cancel()

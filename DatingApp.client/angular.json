@@ -35,11 +35,13 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.rtl.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.rtl.min.css",
               "./node_modules/ngx-toastr/toastr.css",
               "src/styles.css"
             ],
-            "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {

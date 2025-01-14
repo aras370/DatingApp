@@ -9,7 +9,7 @@ import { MemberDTO } from '../../UserDTO/MemberDTO';
 })
 export class MemberListComponent implements OnInit {
 
-  members: MemberDTO[] = []
+  members: MemberDTO[]
 
   constructor(private memberService: MemberService) {
 
@@ -24,7 +24,7 @@ export class MemberListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-this.loadmembers()
+    this.loadmembers()
   }
 
 

@@ -6,16 +6,22 @@ import { MemberDetailComponent } from './members/member-detail/member-detail.com
 import { ListsComponent } from './lists/lists.component';
 import { MessageComponent } from './message/message.component';
 import { AuthGuard } from './guards/auth.guard';
+import { EditMemberComponent } from './members/edit-member/edit-member.component';
+import { preventUnsavesdChangesGuard } from './guards/prevent-unsavesd-changes.guard';
 
-const routes: Routes = [ { path: '', component: HomeComponent },
-  { path: 'members', component: MemberListComponent, canActivate:[AuthGuard] },
-  { path: 'members/:id', component: MemberDetailComponent },
-  { path: 'lists', component: ListsComponent },
-  { path: 'messages', component: MessageComponent },
-  { path: '**', component: HomeComponent, pathMatch: 'full' }];
+const routes: Routes = [{ path: '', component: HomeComponent },
+{ path: 'members', component: MemberListComponent, canActivate: [AuthGuard] },
+{ path: 'members/:username', component: MemberDetailComponent },
+{ path: 'lists', component: ListsComponent },
+{ path: 'messages', component: MessageComponent },
+{ path: 'member/edit', component: EditMemberComponent,canDeactivate:[preventUnsavesdChangesGuard] },
+{ path: '**', component: HomeComponent, pathMatch: 'full' }
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes)
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Domain.DTOs.User
 {
@@ -12,7 +7,7 @@ namespace Domain.DTOs.User
 
         #region Properties
 
-        [Key]
+       
         public int UserId { get; set; }
 
        
@@ -24,9 +19,9 @@ namespace Domain.DTOs.User
         public int Age{ get; set; }
 
 
-        public string KnowAs { get; set; }
+        public string KnownAs { get; set; }
 
-        public string Mobile { get; set; }
+        public string? Mobile { get; set; }
 
 
         public string Gender { get; set; }
@@ -37,11 +32,12 @@ namespace Domain.DTOs.User
 
         public string LookingFor { get; set; }
 
-
+        public string? Photourl { get; set; }
 
 
         public string Intrests { get; set; }
 
+        public DateTime Lastactive { get; set; }
 
         [Display(Name = "شهر")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
@@ -64,12 +60,10 @@ namespace Domain.DTOs.User
         [Display(Name = "تاریخ ثبت نام")]
         public DateTime RegisterDate { get; set; }
 
-        #endregion
-
-
-        #region Relations
 
         public ICollection<PhotoDTO> PhotoDTOs { get; set; }
+       
+
 
         #endregion
 

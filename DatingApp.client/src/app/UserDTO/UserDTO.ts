@@ -1,6 +1,6 @@
 export interface UserDTO{
 
-username:string,
+userName:string,
 
 token:string
 

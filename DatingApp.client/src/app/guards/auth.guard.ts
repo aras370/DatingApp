@@ -20,7 +20,7 @@ export class AuthGuard implements CanActivate {
       if (user)
         return true;
       else {
-        this.toastr.error('you are not login....')
+        this.toastr.error('ابتدا به سیستم وارد شوید')
         return false
       }
     }))

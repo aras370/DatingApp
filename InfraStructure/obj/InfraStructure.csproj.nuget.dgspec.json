@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DatingApp\\InfraStructure\\InfraStructure.csproj": {}
+    "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\InfraStructure\\InfraStructure.csproj": {}
   },
   "projects": {
-    "D:\\DatingApp\\Domain\\Domain.csproj": {
+    "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DatingApp\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\DatingApp\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Amazondigi.com\\.nuget\\packages\\",
-        "outputPath": "D:\\DatingApp\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,14 +90,14 @@
         }
       }
     },
-    "D:\\DatingApp\\InfraStructure\\InfraStructure.csproj": {
+    "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\InfraStructure\\InfraStructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DatingApp\\InfraStructure\\InfraStructure.csproj",
+        "projectUniqueName": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\InfraStructure\\InfraStructure.csproj",
         "projectName": "InfraStructure",
-        "projectPath": "D:\\DatingApp\\InfraStructure\\InfraStructure.csproj",
+        "projectPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\InfraStructure\\InfraStructure.csproj",
         "packagesPath": "C:\\Users\\Amazondigi.com\\.nuget\\packages\\",
-        "outputPath": "D:\\DatingApp\\InfraStructure\\obj\\",
+        "outputPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\InfraStructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -118,8 +118,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\DatingApp\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\DatingApp\\Domain\\Domain.csproj"
+              "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Domain\\Domain.csproj"
               }
             }
           }

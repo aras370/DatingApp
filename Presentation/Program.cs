@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using System.Text.Unicode;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +22,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IViewRenderService, RenderViewToString>();
 
-builder.Services.AddScoped<ITokenService,TokenService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 builder.Services.AddDbContext<Context>(options =>
 options.UseSqlServer(builder.Configuration["ConnectionStrings:connectionstring"])
@@ -32,14 +31,20 @@ options.UseSqlServer(builder.Configuration["ConnectionStrings:connectionstring"]
 builder.Services.AddCors();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
-    options=>
+    options =>
     {
+        options.SaveToken = true;
+        options.RequireHttpsMetadata = false;
         options.TokenValidationParameters = new TokenValidationParameters()
         {
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime=true,
             ValidateIssuerSigningKey=true,
-            IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetSection("TokenKey").ToString())),
-            ValidateIssuer=true,
-            ValidateAudience=false
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience= builder.Configuration["Jwt:Issuer"],
+
         };
     });
 
@@ -55,7 +60,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors(x =>x.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:4200"));
+app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:4200"));
 
 
 

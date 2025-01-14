@@ -10,7 +10,6 @@ namespace Domain.DTOs.Account
     public class RegisterDTO
     {
 
-
         [Required(ErrorMessage = "نام را وارد کنید")]
         [MaxLength(50)]
         [Display(Name = "نام")]

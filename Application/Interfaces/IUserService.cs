@@ -22,6 +22,10 @@ namespace Application
 
         Task<MemberDTO> GetUserInformationByUserName(string userName);
 
+        Task EditUserInformationByUser(UpdateMemberDTO member,int userid);
+
+        Task<UpdateMemberDTO> GetUserForEdit(int userId);
+
         #region Account
 
         Task<RegisterResult> Register(RegisterDTO register);

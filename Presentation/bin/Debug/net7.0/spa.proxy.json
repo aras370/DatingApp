@@ -2,7 +2,7 @@
 "SpaProxyServer": {
 "ServerUrl": "https://localhost:4200",
 "LaunchCommand": "npm start",
-"WorkingDirectory": "D:\\DatingApp\\Presentation\\..\\datingapp.client",
+"WorkingDirectory": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\..\\datingapp.client",
 "MaxTimeoutInSeconds": "120"
 }
 }

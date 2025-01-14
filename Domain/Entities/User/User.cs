@@ -33,66 +33,66 @@ namespace Domain
 
 
         [Display(Name = "تاریخ تولد")]
-        public DateTime DateOfBirth { get; set; } = DateTime.Now;
+        public DateTime? DateOfBirth { get; set; } = DateTime.Now;
 
 
         [Display(Name = "آخرین بازدید")]
-        public DateTime LastSeen { get; set; } = DateTime.Now;
+        public DateTime? LastSeen { get; set; } = DateTime.Now;
 
 
         [Display(Name = "طریق آشنایی")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         [MaxLength(50, ErrorMessage = "{0} نمی تواند بیشتر از {1} کاراکتر باشد .")]
 
-        public string KnowAs { get; set; }
+        public string? KnowAs { get; set; }
 
 
         [Display(Name = "جنسیت")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         [MaxLength(50, ErrorMessage = "{0} نمی تواند بیشتر از {1} کاراکتر باشد .")]
-        public string Gender { get; set; }
+        public string? Gender { get; set; }
 
         [Display(Name = "موبایل")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         [MaxLength(50, ErrorMessage = "{0} نمی تواند بیشتر از {1} کاراکتر باشد .")]
-        public string Mobile { get; set; }
+        public string? Mobile { get; set; }
 
 
 
 
-        public string Introduction { get; set; }
+        public string? Introduction { get; set; }
 
 
        
 
-        public string LookingFor { get; set; }
+        public string? LookingFor { get; set; }
 
 
         
 
-        public string Intrests { get; set; }
+        public string? Intrests { get; set; }
 
 
         [Display(Name = "شهر")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         [MaxLength(50, ErrorMessage = "{0} نمی تواند بیشتر از {1} کاراکتر باشد .")]
-        public string City { get; set; }
+        public string? City { get; set; }
 
 
         [Display(Name = "کشور")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         [MaxLength(50, ErrorMessage = "{0} نمی تواند بیشتر از {1} کاراکتر باشد .")]
-        public string Country { get; set; }
+        public string? Country { get; set; }
 
 
 
-        public string AvatarName { get; set; }
+        public string? AvatarName { get; set; }
 
         [Display(Name = "وضعیت")]
-        public bool IsActiveEmail { get; set; }
+        public bool? IsActiveEmail { get; set; }
 
         [Display(Name = "تاریخ ثبت نام")]
-        public DateTime RegisterDate { get; set; }
+        public DateTime? RegisterDate { get; set; }
 
 
 

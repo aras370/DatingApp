@@ -1,7 +1,7 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -14,8 +14,13 @@ import { ListsComponent } from './lists/lists.component';
 import { MessageComponent } from './message/message.component';
 import { ToastrModule } from 'ngx-toastr';
 import { MemberService } from './services/member.service';
-
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MemberCardComponent } from './members/member-card/member-card.component';
+import { JwtInterceptor } from './interceptor/jwt.interceptor';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { EditMemberComponent } from './members/edit-member/edit-member.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { loadingInterceptor } from './interceptor/loading.interceptor';
 
 @NgModule({
   declarations: [
@@ -26,16 +31,30 @@ import { MemberService } from './services/member.service';
     MemberListComponent,
     MemberDetailComponent,
     ListsComponent,
-    MessageComponent
+    MessageComponent,
+    MemberCardComponent,
+    EditMemberComponent  
   ],
   imports: [
     BrowserModule, HttpClientModule,
+    NgxGalleryModule,
     AppRoutingModule,
     FormsModule,
     AppRoutingModule,
-    ToastrModule.forRoot({positionClass:'toast-bottom-right'})
+    ReactiveFormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot({
+      timeOut: 2000, // Optional default settings
+      positionClass: 'toast-top-center',
+      preventDuplicates: true,
+    }),
+    NgxSpinnerModule
   ],
-  providers: [AccountService,MemberService],
+  providers: [AccountService,MemberService,
+    {provide:HTTP_INTERCEPTORS,useClass:JwtInterceptor,multi:true},
+    {provide:HTTP_INTERCEPTORS,useClass:loadingInterceptor,multi:true}
+
+  ],
   bootstrap: [AppComponent],
 
 })

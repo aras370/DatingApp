@@ -2,17 +2,21 @@ import { PhotoDTO } from "./PhotoDTOs"
 
 export interface MemberDTO {
 
-    id: number
+    userID: number
 
-    username: string
+    userName: string
+
+    email: string
 
     photourl: string
 
     age: number
 
-    knowas: string
+    knownas: string
 
-    createdate: Date
+    mobile: string
+
+    registerDate: Date
 
     lastactive: Date
 
@@ -20,7 +24,7 @@ export interface MemberDTO {
 
     introduction: string
 
-    lookingfor: string
+    lookingFor: string
 
     intrests: string
 
@@ -28,6 +32,10 @@ export interface MemberDTO {
 
     country: string
 
-    photos: PhotoDTO[]
+    avatarName: string
+
+    PhotoDTOs: PhotoDTO[]
+
+    IsActiveEmail:boolean
 
 }

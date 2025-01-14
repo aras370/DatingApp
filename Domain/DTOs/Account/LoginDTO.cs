@@ -29,7 +29,6 @@ namespace Domain.DTOs.Account
     {
         Success,
         NotFound,
-        Error,
         InActiveAccount
     }
 }

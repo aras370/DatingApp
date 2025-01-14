@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Runtime.Intrinsics.X86;
+using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
 
 
 namespace Presentation.Controllers
@@ -29,25 +31,32 @@ namespace Presentation.Controllers
             switch (user)
             {
                 case LoginResult.Success:
-
-                    var user1 = await userService.GetUserByEmail(login.Email);
-
-                    return new JsonResult(new ResponseResult(true, "ورود به سیستم با موفقیت انجام شد", new UserDTO
                     {
-                        UserName = user1.UserName,
-                        Token = tokenService.CreateToken(user1)
-                    }));
+
+                        var user1 = await userService.GetUserByEmail(login.Email);
+
+
+                        return new JsonResult(new ResponseResult(true, "ورود به سیستم با موفقیت انجام شد", new UserDTO
+                        {
+                            UserName = user1.UserName,
+                            Token = tokenService.CreateToken(user1)
+                        }));
+
+                    }
+
 
 
                 case LoginResult.NotFound:
-                    return new JsonResult(new ResponseResult(false, "کاربری با مشخاصت ارائه شده یافت نشد"));
+                    {
+                        return new JsonResult(new ResponseResult(false, "کاربری با مشخصات وارد شده یافت نشد"));
+                    }
+
 
                 case LoginResult.InActiveAccount:
-                    return new JsonResult(new ResponseResult(false, "حساب کاربری شما فعال نمیباشد"));
+                    {
 
-
-                default:
-                    break;
+                        return new JsonResult(new ResponseResult(false, "حساب کاربری شما فعال نمیباشد"));
+                    }
             }
 
             return Ok();
