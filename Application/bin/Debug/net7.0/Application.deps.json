@@ -1983,7 +1983,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0"
         },
         "runtime": {
-          "Domain.dll": {}
+          "Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "InfraStructure/1.0.0": {
@@ -1992,7 +1995,10 @@
           "Microsoft.AspNetCore.Mvc.Razor": "2.2.0"
         },
         "runtime": {
-          "InfraStructure.dll": {}
+          "InfraStructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

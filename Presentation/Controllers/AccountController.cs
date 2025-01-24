@@ -33,13 +33,13 @@ namespace Presentation.Controllers
                 case LoginResult.Success:
                     {
 
-                        var user1 = await userService.GetUserByEmail(login.Email);
+                        var loggedinuser = await userService.GetUserByEmail(login.Email);
 
 
                         return new JsonResult(new ResponseResult(true, "ورود به سیستم با موفقیت انجام شد", new UserDTO
                         {
-                            UserName = user1.UserName,
-                            Token = tokenService.CreateToken(user1)
+                            UserName = loggedinuser.UserName,
+                            Token = tokenService.CreateToken(loggedinuser)
                         }));
 
                     }

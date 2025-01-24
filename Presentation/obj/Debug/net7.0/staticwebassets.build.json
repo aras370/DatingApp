@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/MQifZpwROsQoJC6PZaCSDGXeHQVLLkAr01XuXJ2rRc=",
+  "Hash": "PlDjtfeJt887aK9Vk7Oun41rymK1EzsqFF2n9yiw2ks=",
   "Source": "Presentation",
   "BasePath": "_content/Presentation",
   "Mode": "Default",
@@ -10,49 +10,219 @@
     {
       "Name": "Presentation\\wwwroot",
       "Source": "Presentation",
-      "ContentRoot": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\",
+      "ContentRoot": "E:\\DatingApp\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\images\\users\\aks-darya-baraye-porofail-30.jpg",
+      "Identity": "E:\\DatingApp\\Presentation\\wwwroot\\images\\users\\aks-darya-baraye-porofail-30.jpg",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\",
+      "ContentRoot": "E:\\DatingApp\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
-      "RelativePath": "images/users/aks-darya-baraye-porofail-30.jpg",
+      "RelativePath": "images/users/aks-darya-baraye-porofail-30#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ze1gr95q7w",
+      "Integrity": "1QX8hfBLuXTolSYcDA5/zfTBgTWcm8HItJolqoKPtx8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\aks-darya-baraye-porofail-30.jpg"
     },
     {
-      "Identity": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\images\\users\\ax-neveshteh-khoshgel-porofail-14.jpg",
+      "Identity": "E:\\DatingApp\\Presentation\\wwwroot\\images\\users\\ax-neveshteh-khoshgel-porofail-14.jpg",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\",
+      "ContentRoot": "E:\\DatingApp\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
-      "RelativePath": "images/users/ax-neveshteh-khoshgel-porofail-14.jpg",
+      "RelativePath": "images/users/ax-neveshteh-khoshgel-porofail-14#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "qnceiznolc",
+      "Integrity": "apoOoWov8e3x3F+pwveQ21MhMGXiyeKgFfNkMhr0fTY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\ax-neveshteh-khoshgel-porofail-14.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/users/aks-darya-baraye-porofail-30.jpg",
+      "AssetFile": "E:\\DatingApp\\Presentation\\wwwroot\\images\\users\\aks-darya-baraye-porofail-30.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42177"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1QX8hfBLuXTolSYcDA5/zfTBgTWcm8HItJolqoKPtx8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 18:18:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1QX8hfBLuXTolSYcDA5/zfTBgTWcm8HItJolqoKPtx8="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/aks-darya-baraye-porofail-30.ze1gr95q7w.jpg",
+      "AssetFile": "E:\\DatingApp\\Presentation\\wwwroot\\images\\users\\aks-darya-baraye-porofail-30.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42177"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1QX8hfBLuXTolSYcDA5/zfTBgTWcm8HItJolqoKPtx8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 18:18:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ze1gr95q7w"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/aks-darya-baraye-porofail-30.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1QX8hfBLuXTolSYcDA5/zfTBgTWcm8HItJolqoKPtx8="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/ax-neveshteh-khoshgel-porofail-14.jpg",
+      "AssetFile": "E:\\DatingApp\\Presentation\\wwwroot\\images\\users\\ax-neveshteh-khoshgel-porofail-14.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84418"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apoOoWov8e3x3F+pwveQ21MhMGXiyeKgFfNkMhr0fTY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 18:18:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-apoOoWov8e3x3F+pwveQ21MhMGXiyeKgFfNkMhr0fTY="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/ax-neveshteh-khoshgel-porofail-14.qnceiznolc.jpg",
+      "AssetFile": "E:\\DatingApp\\Presentation\\wwwroot\\images\\users\\ax-neveshteh-khoshgel-porofail-14.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84418"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apoOoWov8e3x3F+pwveQ21MhMGXiyeKgFfNkMhr0fTY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 18:18:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qnceiznolc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/ax-neveshteh-khoshgel-porofail-14.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-apoOoWov8e3x3F+pwveQ21MhMGXiyeKgFfNkMhr0fTY="
+        }
+      ]
     }
   ]
 }

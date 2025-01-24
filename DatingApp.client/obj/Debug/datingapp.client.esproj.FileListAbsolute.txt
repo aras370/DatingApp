@@ -1,3 +1,4 @@
 D:\AngularApp\angularapp.client\obj\Debug\datingapp.client.esproj.CoreCompileInputs.cache
 D:\DatingApp\datingApp.client\obj\Debug\datingapp.client.esproj.CoreCompileInputs.cache
 C:\Users\Amazondigi.com\Desktop\DatingApp\datingApp.client\obj\Debug\datingapp.client.esproj.CoreCompileInputs.cache
+E:\DatingApp\datingApp.client\obj\Debug\datingapp.client.esproj.CoreCompileInputs.cache

@@ -1,4 +1,5 @@
-﻿using Domain.Entities.User;
+﻿using Domain.Entities;
+using Domain.Entities.User;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,10 @@ namespace Domain
         }
 
         public DbSet<User> Users { get; set; }
+
+        public DbSet<UserRoles> UserRoles { get; set; }
+
+        public DbSet<Role> Roles{ get; set; }
 
         public DbSet<Photo> Photos{ get; set; }
 

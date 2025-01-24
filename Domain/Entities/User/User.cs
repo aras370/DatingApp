@@ -100,6 +100,8 @@ namespace Domain
 
         public ICollection<Photo> Photos{ get; set; }
 
+        public List<UserRoles> UserRoles { get; set; }
+
         #endregion
 
 

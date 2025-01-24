@@ -1,26 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\",
+  "WorkspaceRootPath": "E:\\DatingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|c:\\users\\amazondigi.com\\desktop\\datingapp\\presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|e:\\datingapp\\presentation\\services\\impelementations\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|solutionrelative:presentation\\services\\impelementations\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|c:\\users\\amazondigi.com\\desktop\\datingapp\\presentation\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A96ADB64-386E-4AF7-8CE6-D1A3ED2101BA}|Domain\\Domain.csproj|e:\\datingapp\\domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96ADB64-386E-4AF7-8CE6-D1A3ED2101BA}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96ADB64-386E-4AF7-8CE6-D1A3ED2101BA}|Domain\\Domain.csproj|e:\\datingapp\\domain\\entities\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96ADB64-386E-4AF7-8CE6-D1A3ED2101BA}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96ADB64-386E-4AF7-8CE6-D1A3ED2101BA}|Domain\\Domain.csproj|e:\\datingapp\\domain\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96ADB64-386E-4AF7-8CE6-D1A3ED2101BA}|Domain\\Domain.csproj|solutionrelative:domain\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|e:\\datingapp\\presentation\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|c:\\users\\amazondigi.com\\desktop\\datingapp\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A96ADB64-386E-4AF7-8CE6-D1A3ED2101BA}|Domain\\Domain.csproj|e:\\datingapp\\domain\\entities\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96ADB64-386E-4AF7-8CE6-D1A3ED2101BA}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|c:\\users\\amazondigi.com\\desktop\\datingapp\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E1EA642E-9800-4597-906C-14D5E9912AFD}|Application\\Application.csproj|e:\\datingapp\\application\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1EA642E-9800-4597-906C-14D5E9912AFD}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|c:\\users\\amazondigi.com\\desktop\\datingapp\\presentation\\services\\impelementations\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB3F9DC1-7D25-4754-B8E8-894172D0A823}|Presentation\\Presentation.csproj|solutionrelative:presentation\\services\\impelementations\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1EA642E-9800-4597-906C-14D5E9912AFD}|Application\\Application.csproj|e:\\datingapp\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1EA642E-9800-4597-906C-14D5E9912AFD}|Application\\Application.csproj|solutionrelative:application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +42,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T11:36:30.622Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "E:\\DatingApp\\Presentation\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\DatingApp\\Presentation\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Presentation\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAAADYAAAAxAAAA",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwBoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T18:20:40.389Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\appsettings.json",
-              "RelativeDocumentMoniker": "Presentation\\appsettings.json",
-              "ToolTip": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\appsettings.json",
-              "RelativeToolTip": "Presentation\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-05T17:58:45.324Z"
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\Program.cs",
-              "ToolTip": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\Program.cs",
-              "RelativeToolTip": "Presentation\\Program.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAFAAAAAAAAAA",
+              "Title": "UserRoles.cs",
+              "DocumentMoniker": "E:\\DatingApp\\Domain\\Entities\\UserRoles.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\UserRoles.cs",
+              "ToolTip": "E:\\DatingApp\\Domain\\Entities\\UserRoles.cs",
+              "RelativeToolTip": "Domain\\Entities\\UserRoles.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T08:22:54.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T17:08:34.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\Services\\Impelementations\\TokenService.cs",
-              "RelativeDocumentMoniker": "Presentation\\Services\\Impelementations\\TokenService.cs",
-              "ToolTip": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\Services\\Impelementations\\TokenService.cs",
-              "RelativeToolTip": "Presentation\\Services\\Impelementations\\TokenService.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAkwCwAAAABAAAA",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\DatingApp\\Domain\\Entities\\User\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\User\\User.cs",
+              "ToolTip": "E:\\DatingApp\\Domain\\Entities\\User\\User.cs",
+              "RelativeToolTip": "Domain\\Entities\\User\\User.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T14:49:10.04Z"
+              "WhenOpened": "2025-01-24T17:08:28.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Role.cs",
+              "DocumentMoniker": "E:\\DatingApp\\Domain\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Role.cs",
+              "ToolTip": "E:\\DatingApp\\Domain\\Entities\\Role.cs",
+              "RelativeToolTip": "Domain\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T17:08:19.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Context.cs",
+              "DocumentMoniker": "E:\\DatingApp\\Domain\\Context.cs",
+              "RelativeDocumentMoniker": "Domain\\Context.cs",
+              "ToolTip": "E:\\DatingApp\\Domain\\Context.cs",
+              "RelativeToolTip": "Domain\\Context.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T15:49:45.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "E:\\DatingApp\\Application\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IUserService.cs",
+              "ToolTip": "E:\\DatingApp\\Application\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswCoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T15:33:30.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\DatingApp\\Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\UserService.cs",
+              "ToolTip": "E:\\DatingApp\\Application\\Services\\UserService.cs",
+              "RelativeToolTip": "Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T14:32:36.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "E:\\DatingApp\\Presentation\\Services\\Impelementations\\TokenService.cs",
+              "RelativeDocumentMoniker": "Presentation\\Services\\Impelementations\\TokenService.cs",
+              "ToolTip": "E:\\DatingApp\\Presentation\\Services\\Impelementations\\TokenService.cs",
+              "RelativeToolTip": "Presentation\\Services\\Impelementations\\TokenService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwB8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T14:49:10.04Z",
+              "EditorCaption": ""
             }
           ]
         }

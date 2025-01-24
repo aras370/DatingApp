@@ -40,5 +40,7 @@ namespace Application
 
         Task AddUser(User user);
 
+        Task <List<string>> GetUsersRoles(int userId);
+
     }
 }

@@ -1,12 +1,16 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\images\\users\\aks-darya-baraye-porofail-30.jpg",
+      "Id": "E:\\DatingApp\\Presentation\\wwwroot\\images\\users\\aks-darya-baraye-porofail-30.jpg",
       "PackagePath": "staticwebassets\\images\\users\\aks-darya-baraye-porofail-30.jpg"
     },
     {
-      "Id": "C:\\Users\\Amazondigi.com\\Desktop\\DatingApp\\Presentation\\wwwroot\\images\\users\\ax-neveshteh-khoshgel-porofail-14.jpg",
+      "Id": "E:\\DatingApp\\Presentation\\wwwroot\\images\\users\\ax-neveshteh-khoshgel-porofail-14.jpg",
       "PackagePath": "staticwebassets\\images\\users\\ax-neveshteh-khoshgel-porofail-14.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Presentation.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",

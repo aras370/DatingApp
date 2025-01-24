@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "images/users/aks-darya-baraye-porofail-30.jpg",
+      "AssetFile": "images/users/aks-darya-baraye-porofail-30.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42177"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1QX8hfBLuXTolSYcDA5/zfTBgTWcm8HItJolqoKPtx8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 18:18:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1QX8hfBLuXTolSYcDA5/zfTBgTWcm8HItJolqoKPtx8="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/aks-darya-baraye-porofail-30.ze1gr95q7w.jpg",
+      "AssetFile": "images/users/aks-darya-baraye-porofail-30.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42177"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1QX8hfBLuXTolSYcDA5/zfTBgTWcm8HItJolqoKPtx8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 18:18:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ze1gr95q7w"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1QX8hfBLuXTolSYcDA5/zfTBgTWcm8HItJolqoKPtx8="
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/aks-darya-baraye-porofail-30.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/users/ax-neveshteh-khoshgel-porofail-14.jpg",
+      "AssetFile": "images/users/ax-neveshteh-khoshgel-porofail-14.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84418"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apoOoWov8e3x3F+pwveQ21MhMGXiyeKgFfNkMhr0fTY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 18:18:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-apoOoWov8e3x3F+pwveQ21MhMGXiyeKgFfNkMhr0fTY="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/ax-neveshteh-khoshgel-porofail-14.qnceiznolc.jpg",
+      "AssetFile": "images/users/ax-neveshteh-khoshgel-porofail-14.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84418"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apoOoWov8e3x3F+pwveQ21MhMGXiyeKgFfNkMhr0fTY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 18:18:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qnceiznolc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-apoOoWov8e3x3F+pwveQ21MhMGXiyeKgFfNkMhr0fTY="
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/ax-neveshteh-khoshgel-porofail-14.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -37,13 +37,13 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         options.RequireHttpsMetadata = false;
         options.TokenValidationParameters = new TokenValidationParameters()
         {
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
             ValidateIssuer = true,
             ValidateAudience = true,
             ValidateLifetime=true,
             ValidateIssuerSigningKey=true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience= builder.Configuration["Jwt:Issuer"],
+            ValidIssuer = "https://localhost:44319/",
+            ValidAudience= "http://localhost:4200/",
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
 
         };
     });
